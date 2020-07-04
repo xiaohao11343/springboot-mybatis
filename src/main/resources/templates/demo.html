@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--这句声明使用thymeleaf标签-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf的入门</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<!--
+输出hello数据
+这句使用 th:text="${变量名}" 表示 使用thymeleaf获取文本数据，类似于EL表达式。
+thymeleaf：都是作用于HTML标签之上
+-->
+<p th:text="${hello}"></p>
+</body>
+</html>
