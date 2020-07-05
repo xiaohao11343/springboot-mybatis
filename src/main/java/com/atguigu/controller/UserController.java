@@ -19,4 +19,11 @@ public class UserController {
         System.out.println("userService.getClass() = " + userService.getClass());//class com.sun.proxy.$Proxy67
         return  userService.findAll();
     }
+    @GetMapping("/user/findUserById")
+    public User findUser(Integer id){
+        return  userService.findUserById(id);
+    }
+
+
+
 }
